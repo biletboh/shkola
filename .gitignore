@@ -1,0 +1,6 @@
+*.pyc
+*.swp
+*.ini
+*.log
+/media/
+/static/
