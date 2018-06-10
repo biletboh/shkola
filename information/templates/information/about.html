@@ -1,0 +1,37 @@
+{% extends "core/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<section class="page-section about-heading">
+	<div class="container">
+		<img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'information/img/about.jpg' %}" alt="About image">
+		<div class="about-heading-content">
+			<div class="row">
+				<div class="col-xl-9 col-lg-10 mx-auto">
+					<div class="bg-faded rounded p-5">
+						<h2 class="section-heading mb-4">
+							<span class="section-heading-upper">{% trans 'Українська суботня школа у Варшаві' %}</span>
+							<span class="section-heading-lower">{% trans 'Про нас' %}</span>
+						</h2>
+						{% blocktrans %}
+						<p>Українська суботня школа у Варшавi - школа для українців, де можна навчитися української мови, історії України, її культури та географії.</p>
+						<p>
+						Ми маємо честь продовжувати майже дев’яносторічну історію українського шкільництва у столиці Польщі. 15 листопада 1929 року розпочала свій переший навчальний рік Українська дитяча школа заснована українськими емігрантами - творцями Української Народної Республіки.
+						</p>
+						<p>
+						Сьогодні у рамках Української суботньої школи у Варшаві співпрацюють Міжшкільний пункт навчання української меншини (громадян Польщі українського походження), що підпорядковується міському <a href="http://edukacja.warszawa.pl/">Бюро освіти</a> та Українська суботня школа для громадян України, якою опікується <a href="http://naszwybir.pl/fond-nash-vibir/">Фонд “Наш вибір”</a>.
+						</p>
+						<p>
+						Близьке розташування відділів дає можливість проводити загальношкільні заходи та урочистості разом  - великою українською варшавською родиною!
+						</p>
+						{% endblocktrans %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

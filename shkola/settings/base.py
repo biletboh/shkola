@@ -20,8 +20,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'default')
 
 INSTALLED_APPS = [
     # custom apps
-    'core.apps.CoreConfig',
     'blog.apps.BlogConfig',
+    'core.apps.CoreConfig',
+    'information.apps.InformationConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -34,6 +35,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -97,6 +99,7 @@ LANGUAGE_CODE = 'uk'
 
 LANGUAGES = (
         ('uk', _('Ukrainian')),
+        ('pl', _('Polish'))
         )
 
 TIME_ZONE = 'Europe/Warsaw'

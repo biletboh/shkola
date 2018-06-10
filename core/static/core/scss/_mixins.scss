@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url("../fonts/MuseoSansCyrl.otf") format("opentype");
+}
+@mixin heading-font {
+  font-family: 'MuseoSansCyrl';
+}
+
+@mixin body-font {
+  font-family: 'MuseoSansCyrl';
+}
