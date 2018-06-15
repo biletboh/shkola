@@ -273,6 +273,9 @@ p {
   color: #eee;
   background: #1e566d;
 }
+.social.social-small {
+  padding: 5px 11px;
+}
 
 .languages {
   position: absolute;
