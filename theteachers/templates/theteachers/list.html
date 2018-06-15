@@ -1,0 +1,39 @@
+{% extends "core/base.html" %}
+
+{% load i18n %}
+{% load widget_tweaks %}
+{% load static %}
+
+{% block head_title %}{% trans 'Учителі Української суботньої школи у Варшаві' %}{% endblock %}
+
+{% block content %}
+
+<section class="page-section teachers">
+	<div class="container">
+		{% for teacher in teachers %}
+		{% if forloop.first %}
+		<div class="row">
+		{% endif %}
+		<div class="col-sm-6">
+			<img class="img-fluid rounded teachers-img mb-3 mb-lg-0" src="{{ teacher.image.teacher.url }}" alt="Teacher image">
+			<div class="teachers-content">
+				<div class="left-0 text-center bg-faded p-5 rounded">
+					<h2 class="section-heading mb-4">
+						<span class="section-heading-upper">{{ teacher.first_name }} {{ teacher.last_name }}</span>
+					</h2>
+					<p class="mb-1">
+					{{ teacher.information }}
+					</p>
+				</div>
+			</div>
+		</div>
+		{% if forloop.last %}
+		</div>
+		{% elif forloop.counter|divisibleby:2 %}
+		</div><div class="row">
+		{% endif %}
+		{% endfor %}
+	</div>
+</section>
+
+{% endblock %}

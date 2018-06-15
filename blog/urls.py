@@ -20,7 +20,7 @@ urlpatterns = [
                 views.UpdatePost.as_view(),
                 name='update'),
             path(
-                'post/delete/<int:post>/',
+                'post/delete/<slug:slug>/',
                 views.DeletePost.as_view(),
                 name='delete'),
             ]

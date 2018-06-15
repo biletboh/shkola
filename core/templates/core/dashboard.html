@@ -62,6 +62,12 @@
                                             <li><a href="{% url 'blog:update_list' %}">{% trans "Дивитися записи" %}</a></li>
                                         </ul>
                                     </li>
+									<li><a><i class="fa fa-user" aria-hidden="true"></i>{% trans "Вчителі" %}<span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="{% url 'theteachers:create' %}">{% trans "Додати вчителя" %}</a></li>
+                                            <li><a href="{% url 'theteachers:update_list' %}">{% trans "Дивитися вчителів" %}</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -96,9 +102,6 @@
                                     <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                                         {% for message in messages %}
                                         <li>
-                                            {% if message.tags %} 
-                                            <span class="message text-danger">{{ message.tags }}: </span>
-                                            {% endif %}
                                             <span class="message">
                                                 {{ message }}
                                             </span>

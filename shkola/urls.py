@@ -13,6 +13,7 @@ urlpatterns = [
 ] + i18n_patterns(
         path('', include('information.urls')),
         path('blog/', include('blog.urls')),
+        path('teachers/', include('theteachers.urls')),
     )
 
 

@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'core.apps.CoreConfig',
     'information.apps.InformationConfig',
+    'theteachers.apps.TheteachersConfig',
 
     # django apps
     'django.contrib.admin',
@@ -201,5 +202,6 @@ THUMBNAIL_ALIASES = {
     '': {
         'blog_preview': {'size': (830, 550), 'crop': True},
         'blog': {'size': (1350, 900), 'crop': True},
+        'teacher': {'size': (300, 450), 'crop': True},
     },
 }
