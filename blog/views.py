@@ -2,8 +2,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 from django.utils.translation import gettext as _
-from django.views.generic import DetailView,\
-        DeleteView, ListView, UpdateView, CreateView
+from django.views.generic import DeleteView, ListView, UpdateView, CreateView
+
+from hitcount.views import HitCountDetailView
 
 from blog.models import Post
 from blog.forms import PostModelForm
@@ -18,10 +19,11 @@ class PostList(ListView):
     paginate_by = 10
 
 
-class Page(DetailView):
+class Page(HitCountDetailView):
     """Render Post Page."""
 
     model = Post
+    count_hit = True
     template_name = 'blog/page.html'
 
 

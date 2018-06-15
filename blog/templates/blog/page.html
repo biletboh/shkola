@@ -16,8 +16,11 @@
 							<span class="section-heading-lower">{{ object.title }}</span>
 						</h2>
 						{{ object.body|safe }}
-						<p>
+						<p class="p-2 float-right">
+						<span class="text-center">
 						<a class="social social-small" href="https://www.facebook.com/share.php?u={{ request.build_absolute_uri }}"><i class="fab fa-facebook-f fa-sm"></i></a>
+						{{ hitcount.total_hits }} <i class="far fa-eye fa-md"></i> 
+						</span>
 						
 						</p>
 					</div>

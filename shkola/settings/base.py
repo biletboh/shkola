@@ -36,9 +36,10 @@ INSTALLED_APPS = [
 
     # external apps
     'easy_thumbnails',
-    'tinymce',
     'django_file_form',
     'django_file_form.ajaxuploader',
+    'hitcount',
+    'tinymce',
     'widget_tweaks'
 ]
 
