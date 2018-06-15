@@ -263,4 +263,15 @@ p {
   font-weight: 100 !important;
 }
 
+.social {
+  color: #eee;
+  background: #297595;
+  padding: 10px 14px;
+  border-radius: 100%;
+}
+.social:hover {
+  color: #eee;
+  background: #1e566d;
+}
+
 /*# sourceMappingURL=../css/business-casual.css.map */
