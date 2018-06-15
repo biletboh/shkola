@@ -68,6 +68,11 @@ p {
   background-color: rgba(238, 238, 238, 0.85);
 }
 
+.pagination li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 #mainNav {
   background-color: rgba(41, 117, 149, 0.9);
   font-family: "MuseoSansCyrl";
@@ -228,6 +233,14 @@ p {
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #b88622;
   border-color: #b88622;
+}
+.btn-primary:not(:disabled):not(.disabled).active {
+  background-color: #a2761e;
+  border-color: #a2761e;
+}
+.btn-primary.disabled {
+  background-color: #adb5bd;
+  border-color: #adb5bd;
 }
 
 .font-weight-light {

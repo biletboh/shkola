@@ -64,3 +64,8 @@ p {
 .bg-faded {
   background-color: fade-out($white, 0.15);
 }
+
+.pagination li {
+	margin-left: 5px;
+	margin-right: 5px;
+}

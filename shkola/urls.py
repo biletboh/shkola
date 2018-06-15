@@ -8,8 +8,11 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('tinymce/', include('tinymce.urls')),
+    path('upload/', include('django_file_form.urls')),
 ] + i18n_patterns(
         path('', include('information.urls')),
+        path('blog/', include('blog.urls')),
     )
 
 

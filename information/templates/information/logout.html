@@ -1,0 +1,27 @@
+{% extends "core/base.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block content %}
+<section class="page-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-5 col-lg-6 mx-auto">
+				<div class="bg-faded rounded p-5">
+					<h2 class="section-heading mb-4">
+						<span class="section-heading-lower">{% trans 'Вийти' %}</span>
+					</h2>
+					<form method="post" action="{% url 'information:logout' %}">
+						{% csrf_token %}
+						<input class="btn btn-primary btn-md mt-2" type="submit" value="вийти" />
+						<input type="hidden" name="next" value="{{ next }}" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}
