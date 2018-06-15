@@ -2,6 +2,9 @@
 {% load staticfiles %}
 {% load i18n %}
 
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,9 +61,26 @@
 				<a class="nav-link text-uppercase text-expanded" href="{% url 'information:contacts' %}">{% trans 'Контакти' %}</a>
             </li>
           </ul>
+		  
         </div>
-      </div>
-    </nav>
+	  </div>
+	  <ul class="list-unstyled list-inline languages">
+		  <li class="list-inline-item"><button class="btn btn-sm btn-languages" id="pl" value="pl" type="button">PL</button></li>
+		  <li class="list-inline-item"><button class="btn btn-sm btn-languages" id="uk" value="uk" type="button">UK</button></li>
+	  </ul>
+	</nav>
+	<form action="{% url "set_language" %}" id="lang-form" method="post">
+		{% csrf_token %}
+		<select name="language" id="language" class="" hidden>
+			{% get_language_info_list for LANGUAGES as langs %}
+			{% for lang in langs %}
+			<option value="{{ lang.code }}"
+					{% if lang.code == LANGUAGE_CODE %}selected="selected"{% endif %}>
+			{{ lang.name_local }}
+			</option>
+			{% endfor %}
+		</select>
+	</form>
 
 	{% block content %}
 	{% endblock %}
@@ -74,6 +94,7 @@
     <!-- Bootstrap core JavaScript -->
 	<script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
 	<script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'core/js/custom.js' %}"></script>
 	{% block js %}
 	{% endblock %}
   </body>

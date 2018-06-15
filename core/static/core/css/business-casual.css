@@ -274,4 +274,18 @@ p {
   background: #1e566d;
 }
 
+.languages {
+  position: absolute;
+}
+
+.btn-languages {
+  color: rgba(238, 238, 238, 0.7);
+  background-color: #236581;
+  border-color: #236581;
+}
+.btn-languages:hover, .btn-languages:focus, .btn-languages:active {
+  background-color: #1e566d;
+  border-color: #1e566d;
+}
+
 /*# sourceMappingURL=../css/business-casual.css.map */

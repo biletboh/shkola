@@ -12,6 +12,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('tinymce/', include('tinymce.urls')),
     path('upload/', include('django_file_form.urls')),
+    path('i18n/', include('django.conf.urls.i18n')),
 ] + i18n_patterns(
         path('', PostList.as_view()),
         path('', include('information.urls')),
