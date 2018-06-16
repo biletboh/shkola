@@ -141,6 +141,14 @@
 				close: 'fa fa-remove'
 			}
 		});
+		var arr = new Array();
+		$(tinyMCE.activeEditor.dom.getRoot()).find('img').each(
+			function()
+			{
+				var src = $(this).attr("src").replace('../../../../', '/');
+				$(this).attr("src", src);
+				console.log($(this).attr("src"));
+			});
 	});
 </script>
 {% endblock %}

@@ -6,9 +6,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from filebrowser.sites import site
+
 from blog.views import PostList
 
 urlpatterns = [
+    path('admin/filebrowser/', site.urls),
+    path('grappelli/', include('grappelli.urls')),
     path('admin/', admin.site.urls),
     path('tinymce/', include('tinymce.urls')),
     path('upload/', include('django_file_form.urls')),

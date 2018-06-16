@@ -26,6 +26,10 @@ INSTALLED_APPS = [
     'information.apps.InformationConfig',
     'theteachers.apps.TheteachersConfig',
 
+    # grappeli and filebrowser
+    'grappelli',
+    'filebrowser',
+
     # django apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -176,33 +180,38 @@ LOGGING = {
     }
 }
 
+# Filebrowser config
+FILEBROWSER_DIRECTORY = 'photos/blog/'
+DIRECTORY = ''
+
 # TinyMCE config
 TINYMCE_JS_URL = '/static/tiny_mce/tiny_mce.js'
 TINYMCE_JS_ROOT = '/static/tiny_mce'
 
 TINYMCE_DEFAULT_CONFIG = {
-    'plugins': ('advlist,autolink,autoresize,fullpage,fullscreen,'
+    'plugins': ('autolink,autoresize,media,'
                 + 'table,paste,searchreplace,wordcount'),
     'theme': "advanced",
     'theme_advanced_resizing': True,
     'theme_advanced_resize_horizontal': True,
     'theme_advanced_buttons1': ('undo,redo,bold,italic,'
-                                + 'underline,strikethrough,|,forecolor,'
-                                + 'backcolor,|,bullist,numlist,|,justifyleft,'
-                                + 'justifycenter,justifyright,justifyfull,|,'
-                                + 'outdent,indent,|,link,unlink,|,'
-                                + 'blockquote,|,hr,charmap'),
+                                + 'underline,strikethrough,forecolor,'
+                                + 'backcolor,bullist,numlist,justifyleft,'
+                                + 'justifycenter,justifyright,justifyfull,'
+                                + 'outdent,indent,link,unlink,'
+                                + 'blockquote,hr,charmap,image,media,table'),
     'width': '100%',
     'cleanup_on_startup': True,
-    'custom_undo_redo_levels': 10,
+    'custom_undo_redo_levels': 20,
     }
-TINYMCE_COMPRESSOR = False
+TINYMCE_COMPRESSOR = True
+TINYMCE_FILEBROWSER = True
 
 # Thumbnails setup
 THUMBNAIL_ALIASES = {
     '': {
         'blog_preview': {'size': (830, 550), 'crop': True},
-        'blog': {'size': (1350, 900), 'crop': True},
+        'blog': {'size': (972, 648), 'crop': True},
         'teacher': {'size': (300, 450), 'crop': True},
     },
 }

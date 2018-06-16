@@ -291,4 +291,8 @@ p {
   border-color: #1e566d;
 }
 
+.blog-img {
+  display: block;
+}
+
 /*# sourceMappingURL=../css/business-casual.css.map */
