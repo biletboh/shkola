@@ -6,7 +6,8 @@ import os
 from django.utils.translation import ugettext_lazy as _
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 # Quick-start development settings - unsuitable for production
@@ -20,20 +21,36 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'default')
 
 INSTALLED_APPS = [
     # custom apps
-    'core.apps.CoreConfig',
     'blog.apps.BlogConfig',
+    'core.apps.CoreConfig',
+    'information.apps.InformationConfig',
+    'theteachers.apps.TheteachersConfig',
 
+    # grappeli and filebrowser
+    'grappelli',
+    'filebrowser',
+
+    # django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # external apps
+    'easy_thumbnails',
+    'django_file_form',
+    'django_file_form.ajaxuploader',
+    'hitcount',
+    'tinymce',
+    'widget_tweaks'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -91,12 +108,16 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+LOGIN_REDIRECT_URL = '/blog/update/list/'
+
 # Internationalization
 
 LANGUAGE_CODE = 'uk'
 
 LANGUAGES = (
         ('uk', _('Ukrainian')),
+        ('pl', _('Polish'))
         )
 
 TIME_ZONE = 'Europe/Warsaw'
@@ -157,4 +178,40 @@ LOGGING = {
             'propagate': False,
         }
     }
+}
+
+# Filebrowser config
+FILEBROWSER_DIRECTORY = 'photos/blog/'
+DIRECTORY = ''
+
+# TinyMCE config
+TINYMCE_JS_URL = '/static/tiny_mce/tiny_mce.js'
+TINYMCE_JS_ROOT = '/static/tiny_mce'
+
+TINYMCE_DEFAULT_CONFIG = {
+    'plugins': ('autolink,autoresize,media,'
+                + 'table,paste,searchreplace,wordcount'),
+    'theme': "advanced",
+    'theme_advanced_resizing': True,
+    'theme_advanced_resize_horizontal': True,
+    'theme_advanced_buttons1': ('undo,redo,bold,italic,'
+                                + 'underline,strikethrough,forecolor,'
+                                + 'backcolor,bullist,numlist,justifyleft,'
+                                + 'justifycenter,justifyright,justifyfull,'
+                                + 'outdent,indent,link,unlink,'
+                                + 'blockquote,hr,charmap,image,media,table'),
+    'width': '100%',
+    'cleanup_on_startup': True,
+    'custom_undo_redo_levels': 20,
+    }
+TINYMCE_COMPRESSOR = True
+TINYMCE_FILEBROWSER = True
+
+# Thumbnails setup
+THUMBNAIL_ALIASES = {
+    '': {
+        'blog_preview': {'size': (830, 550), 'crop': True},
+        'blog': {'size': (972, 648), 'crop': True},
+        'teacher': {'size': (300, 450), 'crop': True},
+    },
 }

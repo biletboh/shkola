@@ -1,0 +1,110 @@
+{% extends "core/base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<section class="page-section cta">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-9 mx-auto">
+				<div class="cta-inner text-center rounded">
+					<h2 class="section-heading mb-5">
+						<span class="section-heading-upper">Для громадян України</span>
+						<span class="section-heading-lower">Контакти</span>
+					</h2>
+					<p class="address mb-3">
+					<em>
+						<strong>Українська суботня школа</strong>
+					</em>
+					<br>
+					<i class="fas fa-map-marker"></i>
+					Zespół Szkół Stenotypii - Języków Obcych w Warszawie
+					<br>
+					<i class="fas fa-mobile-alt"></i>
+					+48 576677498
+					<br>
+					<i class="fas fa-envelope"></i>
+					szkola@naszwybor.org.pl
+					<br>
+					<i class="fas fa-envelope"></i>
+					rekrutacja.uaszkola@gmail.com
+					</p>
+					<p>
+					<a class="social" href="https://www.facebook.com/ua.szkola.waw/"><i class="fab fa-facebook-f fa-lg"></i></a>
+					</p>
+					<p class="address mb-3">
+					<em>
+						Дошкільний відділ <strong>Дитячий клуб Рукавичка</strong>
+					</em>
+					<br>
+					<i class="fas fa-map-marker"></i>
+					Український дім у Варшаві
+					<br>
+					<i class="fas fa-mobile-alt"></i>
+					+48 727805764
+					<br>
+					<i class="fas fa-envelope"></i>
+					rukawyczka@naszwybor.org.pl
+					</p>
+					<p>	
+					<a class="social" href="https://www.facebook.com/rukawyczka/"><i class="fab fa-facebook-f fa-lg"></i></a>
+					</p>
+					
+
+					<h3 class="mb-3">
+						заняття відбуваються щосуботи
+					</h3>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="page-section cta">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-9 mx-auto">
+				<div class="cta-inner text-center rounded">
+					<h2 class="section-heading mb-5">
+						<span class="section-heading-upper">Для громадян Польщі</span>
+						<span class="section-heading-lower">Контакти</span>
+					</h2>
+					<p class="address mb-3">
+					<em>
+						<strong>Дошкільний та шкільний відділи</strong>
+					</em>
+					<br>
+					<i class="fas fa-map-marker"></i>
+					Szkola Podstawowa 221
+					</p>
+					<p class="address mb-3">
+					<em>
+						<strong>Ліцейний відділ</strong>
+					</em>
+					<br>
+					<i class="fas fa-map-marker"></i>
+					XII Liceum Ogólnokształcący
+					<br>
+					<i class="fas fa-envelope"></i>
+					uaszkola.waw@gmail.com
+					</p>
+					<h3 class="mb-3">
+						заняття відбуваються щосуботи
+					</h3>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
+
+{% block js %}
+<script>
+$(document).ready(function(){
+    $('#contacts-page').addClass('active');
+});
+</script>
+{% endblock %}

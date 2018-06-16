@@ -1,0 +1,13 @@
+.social {
+    color: $white;
+    background: $secondary;
+    padding: 10px 14px;
+    border-radius: 100%;
+	&:hover {
+		color: $white;
+		background: darken($secondary, 10%); 	
+	}
+	&.social-small {
+		padding: 5px 11px;
+	}
+}
