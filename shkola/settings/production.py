@@ -3,12 +3,7 @@ from .base import *
 DEBUG = False
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'default')
-
-# Sentry logs configuration
-INSTALLED_APPS += ['raven.contrib.django.raven_compat',]
-RAVEN_CONFIG = {
-    'dsn': os.environ.get('RAVEN_DSN', 'default'),
-}
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '*').split(',')
 
 # Security configuration
 SECURE_CONTENT_TYPE_NOSNIFF = True
