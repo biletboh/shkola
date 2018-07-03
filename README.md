@@ -1,6 +1,9 @@
 # The Ukrainian Saterday School in Warshaw 
 
-This repository contains the source for a website of The Ukrainian Saterday School in Warshaw. It contains a blog and information about teachers.
+This repository contains the source for a website of The Ukrainian Saterday School in Warshaw. It contains a blog and information about teachers developed with Django.
+
+## The website
+https://uaszkolawaw.pl/
 
 ### Prerequisites
 

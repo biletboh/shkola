@@ -33,7 +33,6 @@
   <body>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">{% trans 'Школа для громадян України Фонду "Наш вибір"' %}</span>
       <span class="site-heading-lower">{% trans 'Українська суботня школа у Варшаві' %}</span>
     </h1>
 
@@ -61,10 +60,13 @@
 				<a class="nav-link text-uppercase text-expanded" href="{% url 'information:contacts' %}">{% trans 'Контакти' %}</a>
             </li>
           </ul>
-		  
-        </div>
+		  <div class="nav nav-lang d-sm-none text-right">
+			  <button class="btn btn-xs btn-languages" id="pl" value="pl" type="button">PL</button>
+			  <button class="btn btn-xs btn-languages" id="uk" value="uk" type="button">UA</button>
+		  </div>
+		</div>
 	  </div>
-	  <ul class="list-unstyled list-inline languages">
+	  <ul class="list-unstyled list-inline languages d-none d-md-block">
 		  <li class="list-inline-item"><button class="btn btn-sm btn-languages" id="pl" value="pl" type="button">PL</button></li>
 		  <li class="list-inline-item"><button class="btn btn-sm btn-languages" id="uk" value="uk" type="button">UK</button></li>
 	  </ul>
@@ -87,7 +89,8 @@
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-		  <p class="m-0 small">{% trans 'Копірайт &copy; Українська суботня школа у Варшаві 2018' %}</p>
+		  <p class="m-0 small">{% trans 'Копірайт &copy; Фонд "Наш вибір" 2018' %}</p>
+		  <p class="m-0 small">{% trans 'Розроблено' %} <a href="https://github.com/biletboh">biletboh</a></p>
       </div>
     </footer>
 

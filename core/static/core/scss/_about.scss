@@ -8,6 +8,24 @@
       margin-top: -5rem;
       position: relative;
       z-index: 1;
+	  img {
+		  max-width: 100%;
+		  height: auto;
+	  }
     }
+  }
+  .about-heading-content {
+	  img {
+		  max-width: 100%;
+		  height: auto;
+	  }
+  }
+  @media (max-width: 992px) {
+	.about-heading-content {
+	  iframe {
+		  max-width: 100%;
+		  height: auto;
+	  }
+  }
   }
 }
