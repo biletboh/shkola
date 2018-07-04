@@ -10,7 +10,7 @@ class Teacher(models.Model):
 
     first_name = models.CharField(_("Ім'я"), max_length=90)
     last_name = models.CharField(_('Прізвище'), max_length=90)
-    information = HTMLField(_('Інформація'), max_length=256, blank=True)
+    information = HTMLField(_('Інформація'), max_length=500, blank=True)
     pub_date = models.DateTimeField(_('Дата публікації'), default=timezone.now)
     image = ThumbnailerImageField(_('Світлина'), upload_to='photos/teachers',
                                   blank=True)
