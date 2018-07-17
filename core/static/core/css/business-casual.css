@@ -44,6 +44,9 @@ p {
   font-weight: 100;
   line-height: 4rem;
 }
+.site-heading img.logo {
+  max-width: 3rem;
+}
 
 .page-section {
   margin-top: 5rem;
@@ -73,13 +76,28 @@ p {
   margin-right: 5px;
 }
 
+@media (max-width: 992px) {
+  .section-heading .section-heading-lower {
+    font-size: 1.8rem;
+    word-wrap: break-word;
+  }
+
+  p {
+    word-wrap: break-word;
+  }
+}
 #mainNav {
   background-color: rgba(41, 117, 149, 0.8);
   font-family: "MuseoSansCyrl";
 }
+#mainNav .logo {
+  width: 2rem;
+  height: 2.4rem;
+  margin: 5px;
+}
 #mainNav .navbar-brand {
   color: #d9a234;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: rgba(238, 238, 238, 0.7);

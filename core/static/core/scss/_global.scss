@@ -40,6 +40,9 @@ p {
     font-weight: 100;
     line-height: 4rem;
   }
+  img.logo {
+	  max-width: 3rem;
+  }
 }
 
 .page-section {
@@ -68,4 +71,17 @@ p {
 .pagination li {
 	margin-left: 5px;
 	margin-right: 5px;
+}
+
+
+@media (max-width: 992px) {
+	.section-heading {
+		.section-heading-lower {
+			font-size: 1.8rem;
+			word-wrap: break-word;
+		}
+	}
+	p {
+		word-wrap: break-word;
+	}
 }
