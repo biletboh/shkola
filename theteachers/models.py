@@ -12,8 +12,9 @@ class Teacher(models.Model):
     last_name = models.CharField(_('Прізвище'), max_length=90)
     information = HTMLField(_('Інформація'), max_length=500, blank=True)
     pub_date = models.DateTimeField(_('Дата публікації'), default=timezone.now)
-    image = ThumbnailerImageField(_('Світлина'), upload_to='photos/teachers',
-                                  blank=True)
+    image = ThumbnailerImageField(
+        _('Світлина'), upload_to='photos/teachers', blank=True,
+        default=('placeholder-avatar.jpg'))
     slug = models.SlugField(_('Посилання'), unique=True, null=True)
 
     def __str__(self):

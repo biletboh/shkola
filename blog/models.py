@@ -12,8 +12,9 @@ class Post(models.Model):
     short_descr = HTMLField(_('Короткий опис'), max_length=256, blank=True)
     body = HTMLField(_('Текст'), blank=True)
     pub_date = models.DateTimeField(_('Дата публікації'))
-    image = ThumbnailerImageField(_('Світлина'), upload_to='photos/blog',
-                                  blank=True)
+    image = ThumbnailerImageField(
+        _('Світлина'), upload_to='photos/blog', blank=True,
+        default=('placeholder-post.jpg'))
     slug = models.SlugField(_('Посилання'), unique=True, null=True)
 
     def __str__(self):
