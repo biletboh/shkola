@@ -4,8 +4,6 @@
 {% load widget_tweaks %}
 {% load static %}
 
-{% block head_title %}{% trans 'Блог Української суботньої школи у Варшаві' %}{% endblock %}
-
 {% block content %}
 
 {% for post in posts %}
@@ -21,7 +19,8 @@
 				{{ post.short_descr }}
 				</p>
 				<div class="intro-button mx-auto">
-					<a class="btn btn-primary btn-xl" href="{% url 'blog:page' post.slug %}#post">{% trans 'Читати далі' %}</a>
+					<a class="btn btn-primary btn-xl d-none d-md-inline-block" href="{% url 'blog:page' post.slug %}#post">{% trans 'Читати далі' %}</a>
+					<a class="btn btn-primary btn-md d-md-none" href="{% url 'blog:page' post.slug %}#post">{% trans 'Читати далі' %}</a>
 				</div>
 			</div>
 		</div>

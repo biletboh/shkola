@@ -13,3 +13,13 @@
 		z-index: 1;
 	}
 }
+@media (max-width: 992px) {
+	.teachers {
+		.teachers-content {
+			margin-top: -6rem;
+		}
+		.p-5 {
+			padding: 3rem 2rem !important;
+		}
+	}
+}

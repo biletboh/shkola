@@ -17,3 +17,15 @@
     }
   }
 }
+@media (max-width: 992px) {
+	.cta {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		.cta-inner {
+			padding: 2rem;
+			h3 {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}

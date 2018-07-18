@@ -77,11 +77,20 @@ p {
 @media (max-width: 992px) {
 	.section-heading {
 		.section-heading-lower {
-			font-size: 1.8rem;
+			font-size: 1.5rem;
 			word-wrap: break-word;
 		}
 	}
 	p {
 		word-wrap: break-word;
+	}
+	.about-heading-content, .intro {
+		.p-5 {
+			padding: 3rem 2rem !important;
+		}
+	}
+	.page-section {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
 }

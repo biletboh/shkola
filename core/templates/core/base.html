@@ -12,10 +12,11 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="{% trans 'Українська суботня школа у Варшаві' %}">
+		<meta name="author" content="biletboh">
 
-		<title>{% block head_title %}{% trans 'Українська суботня школа у Варшаві' %}{% endblock %}</title>
+		<title>{% trans 'Українська суботня школа у Варшаві' %}</title>
+		<link rel="icon" type="image/png" href="{% static 'core/img/favicon.png' %}">
 
 		<!-- Bootstrap core CSS -->
 		<link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -64,13 +65,13 @@
 							<a class="nav-link text-uppercase text-expanded" href="{% url 'information:contacts' %}">{% trans 'Контакти' %}</a>
 						</li>
 					</ul>
-					<div class="nav nav-lang d-sm-none text-right">
+					<div class="nav nav-lang d-lg-none text-right">
 						<button class="btn btn-xs btn-languages" id="pl" value="pl" type="button">PL</button>
 						<button class="btn btn-xs btn-languages" id="uk" value="uk" type="button">UA</button>
 					</div>
 				</div>
 			</div>
-			<ul class="list-unstyled list-inline languages d-none d-md-block">
+			<ul class="list-unstyled list-inline languages d-none d-lg-block">
 				<li class="list-inline-item"><button class="btn btn-sm btn-languages" id="pl" value="pl" type="button">PL</button></li>
 				<li class="list-inline-item"><button class="btn btn-sm btn-languages" id="uk" value="uk" type="button">UK</button></li>
 			</ul>
