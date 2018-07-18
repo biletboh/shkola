@@ -19,9 +19,11 @@ class TeacherModelForm(CustomFileFormMixin, forms.ModelForm):
 
     class Meta:
         model = Teacher
-        fields = ('first_name', 'last_name', 'information', 'slug')
+        fields = ('first_name', 'last_name', 'information', 'first_name_pl',
+                  'last_name_pl', 'information_pl', 'slug')
         widgets = {
             'information': forms.Textarea(attrs={'cols': 80, 'rows': 3}),
+            'information_pl': forms.Textarea(attrs={'cols': 80, 'rows': 3}),
         }
 
     def save(self, commit=True):

@@ -4,9 +4,12 @@
 {% load widget_tweaks %}
 {% load static %}
 
+{% get_current_language as LANGUAGE_CODE %}
+
 {% block content %}
 
 {% for post in posts %}
+{% if LANGUAGE_CODE == 'uk' and post.title %}
 <section class="page-section clearfix">
 	<div class="container">
 		<div class="intro">
@@ -24,8 +27,31 @@
 				</div>
 			</div>
 		</div>
+
+
 	</div>
 </section>
+{% elif LANGUAGE_CODE == 'pl' and post.title_pl %}
+<section class="page-section clearfix">
+	<div class="container">
+		<div class="intro">
+			<img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% if post.image_pl %}{{ post.image_pl.blog_preview.url }}{% else %}{{ post.image.blog_preview.url }}{% endif %}" alt="">
+			<div class="intro-text left-0 text-center bg-faded p-5 rounded">
+				<h2 class="section-heading mb-4">
+					<span class="section-heading-lower">{{ post.title_pl }}</span>
+				</h2>
+				<p class="mb-3">
+				{{ post.short_descr_pl }}
+				</p>
+				<div class="intro-button mx-auto">
+					<a class="btn btn-primary btn-xl d-none d-md-inline-block" href="{% url 'blog:page' post.slug %}#post">{% trans 'Читати далі' %}</a>
+					<a class="btn btn-primary btn-md d-md-none" href="{% url 'blog:page' post.slug %}#post">{% trans 'Читати далі' %}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}
 {% endfor %}
 
 <section>

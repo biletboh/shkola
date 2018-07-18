@@ -63,7 +63,7 @@ p {
 }
 .section-heading .section-heading-lower {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
@@ -201,7 +201,7 @@ p {
     z-index: 0;
   }
   .about-heading .about-heading-content {
-    margin-top: -5rem;
+    margin-top: -6rem;
     position: relative;
     z-index: 1;
   }

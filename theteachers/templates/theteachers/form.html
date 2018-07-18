@@ -45,9 +45,6 @@
         </div>
     </div>
     <div class="row">
-        
-    </div>
-    <div class="row">
         <div class="col-md-12">
             <div class="row">
                 <div class="form-group">
@@ -64,6 +61,57 @@
             </div>
         </div>
     </div>
+	<hr>
+	<div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-4 col-sm-2 col-xs-12" for="{{ form.first_name_pl.auto_id }}">
+                        {{ form.first_name_pl.label }}<span class="required">*</span>
+                    </label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        {{ form.first_name_pl|attr:"class:form-control" }}
+                    </div>
+                    <div class="col-md-12">
+                        {{ form.first_name_pl.errors }}
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="col-md-6">
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-4 col-sm-4 col-xs-12" for="{{ form.list_name_pl.auto_id }}">
+                        {{ form.last_name_pl.label }}<span class="required">*</span>
+                    </label>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        {{ form.last_name_pl|attr:"class:form-control" }}
+                    </div>
+                    <div class="col-md-12">
+						{{ form.last_name_pl.errors }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-sm-2 col-xs-12" for="{{ form.information_pl.auto_id }}">
+						{{ form.information_pl.label }}<span class="required">*</span>
+                    </label>
+                    <div class="col-md-10 col-sm-10 col-xs-12">
+                        {{ form.information_pl|attr:"class:form-control" }}
+                    </div>
+                    <div class="col-md-12">
+                        {{ form.information_pl.errors }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<hr>
 	<div class="row">
 		<div class="col-md-6">
 			<div class="row">

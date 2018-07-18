@@ -4,11 +4,14 @@
 {% load widget_tweaks %}
 {% load static %}
 
+{% get_current_language as LANGUAGE_CODE %}
+
 {% block content %}
 
 <section class="page-section teachers">
 	<div class="container">
 		{% for teacher in teachers %}
+		{% if LANGUAGE_CODE == 'uk' and teacher.first_name %}
 		{% if forloop.first %}
 		<div class="row">
 		{% endif %}
@@ -29,6 +32,30 @@
 		</div>
 		{% elif forloop.counter|divisibleby:2 %}
 		</div><div class="row">
+		{% endif %}
+
+		{% elif LANGUAGE_CODE == 'pl' and teacher.first_name_pl %}
+		{% if forloop.first %}
+		<div class="row">
+		{% endif %}
+		<div class="col-sm-6">
+			<img class="img-fluid rounded teachers-img mb-3 mb-lg-0" src="{{ teacher.image.teacher.url }}" alt="Teacher image">
+			<div class="teachers-content">
+				<div class="left-0 text-center bg-faded p-5 rounded">
+					<h2 class="section-heading mb-4">
+						<span class="section-heading-upper">{{ teacher.first_name_pl }} {{ teacher.last_name_pl }}</span>
+					</h2>
+					<p class="mb-1">
+					{{ teacher.information_pl }}
+					</p>
+				</div>
+			</div>
+		</div>
+		{% if forloop.last %}
+		</div>
+		{% elif forloop.counter|divisibleby:2 %}
+		</div><div class="row">
+		{% endif %}
 		{% endif %}
 		{% endfor %}
 	</div>
