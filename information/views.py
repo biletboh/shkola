@@ -24,8 +24,8 @@ class ContactFormView(SuccessMessageMixin, FormView):
 
     form_class = ContactForm
     template_name = 'information/contact_form.html'
-    success_url = reverse_lazy('information:contact')
-    success_message = _('Повідомлення надісланно!')
+    success_url = reverse_lazy('information:contact_form')
+    success_message = _('Повідомлення надіслано!')
 
     def form_valid(self, form):
         name = form.cleaned_data['name']

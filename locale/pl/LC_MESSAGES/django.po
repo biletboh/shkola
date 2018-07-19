@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-19 21:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: blog/forms.py:15 blog/models.py:21 theteachers/forms.py:13
+#: theteachers/models.py:21
+msgid "Світлина"
+msgstr ""
+
+#: blog/forms.py:16 blog/models.py:24
+msgid "Світлина польською"
+msgstr ""
+
+#: blog/models.py:11
+msgid "Заголовок"
+msgstr ""
+
+#: blog/models.py:12
+msgid "Заголовок польською"
+msgstr ""
+
+#: blog/models.py:14
+msgid "Короткий опис"
+msgstr ""
+
+#: blog/models.py:15
+msgid "Короткий опис польсьокю"
+msgstr ""
+
+#: blog/models.py:17
+msgid "Текст"
+msgstr ""
+
+#: blog/models.py:18
+msgid "Текст польською"
+msgstr ""
+
+#: blog/models.py:19 theteachers/models.py:19
+msgid "Дата публікації"
+msgstr ""
+
+#: blog/models.py:26 theteachers/models.py:23
+msgid "Посилання"
+msgstr ""
+
+#: blog/templates/blog/blog.html:25 blog/templates/blog/blog.html:26
+#: blog/templates/blog/blog.html:47 blog/templates/blog/blog.html:48
+msgid "Читати далі"
+msgstr "Czytaj dalej"
+
+#: blog/views.py:36
+msgid "Запис додано!"
+msgstr ""
+
+#: blog/views.py:45
+msgid "Запис оновлено!"
+msgstr ""
+
+#: core/templates/core/base.html:15 core/templates/core/base.html:18
+#: core/templates/core/base.html:38
+#: information/templates/information/about.html:15
+msgid "Українська суботня школа у Варшаві"
+msgstr "Sobotnia Szkoła Ukraińska w Warszawie"
+
+#: core/templates/core/base.html:46
+msgid "Українська суботня"
+msgstr "Sobotnia Szkoła"
+
+#: core/templates/core/base.html:46
+msgid "школа у Варшаві"
+msgstr "Ukraińska w Warszawie"
+
+#: core/templates/core/base.html:54 core/templates/core/dashboard.html:60
+msgid "Блог"
+msgstr "Wydarzenia"
+
+#: core/templates/core/base.html:59
+#: information/templates/information/about.html:16
+msgid "Про нас"
+msgstr "O szkole"
+
+#: core/templates/core/base.html:62 core/templates/core/dashboard.html:66
+msgid "Вчителі"
+msgstr "Kadra pedagogiczna"
+
+#: core/templates/core/base.html:65
+msgid "Контакти"
+msgstr "Kontakty"
+
+#: core/templates/core/base.html:68
+msgid "Написати нам"
+msgstr "Napisz do nas"
+
+#: core/templates/core/base.html:93
+msgid "Копірайт &copy; Фонд \"Наш вибір\" 2018"
+msgstr "&copy; Fundacja \"Nasz Wybór\" 2018"
+
+#: core/templates/core/base.html:94
+msgid "Розроблено"
+msgstr "Realizacja"
+
+#: core/templates/core/dashboard.html:62
+msgid "Додати запис"
+msgstr ""
+
+#: core/templates/core/dashboard.html:63
+msgid "Дивитися записи"
+msgstr ""
+
+#: core/templates/core/dashboard.html:68
+msgid "Додати вчителя"
+msgstr ""
+
+#: core/templates/core/dashboard.html:69
+msgid "Дивитися вчителів"
+msgstr ""
+
+#: information/forms.py:8 theteachers/models.py:11
+msgid "Ім'я"
+msgstr "Imię"
+
+#: information/forms.py:9
+msgid "Емейл"
+msgstr "E-mail"
+
+#: information/forms.py:10
+msgid "Телефон"
+msgstr "Telefon"
+
+#: information/forms.py:11
+msgid "Повідомлення"
+msgstr "Wiadomość"
+
+#: information/templates/information/about.html:18
+msgid ""
+"\n"
+"\t\t\t\t\t\t<p>Українська суботня школа у Варшавi - школа для українців, де "
+"можна навчитися української мови, історії України, її культури та географії."
+"</p>\n"
+"\t\t\t\t\t\t<p>\n"
+"\t\t\t\t\t\tМи маємо честь продовжувати майже дев’яносторічну історію "
+"українського шкільництва у столиці Польщі. 15 листопада 1929 року розпочала "
+"свій переший навчальний рік Українська дитяча школа заснована українськими "
+"емігрантами - творцями Української Народної Республіки.\n"
+"\t\t\t\t\t\t</p>\n"
+"\t\t\t\t\t\t<p>\n"
+"\t\t\t\t\t\tСьогодні у рамках Української суботньої школи у Варшаві "
+"співпрацюють Міжшкільний пункт навчання української меншини (громадян Польщі "
+"українського походження), що підпорядковується міському <a href=\"http://"
+"edukacja.warszawa.pl/\">Бюро освіти</a> та Українська суботня школа для "
+"громадян України, якою опікується <a href=\"http://naszwybir.pl/fond-nash-"
+"vibir/\">Фонд “Наш вибір”</a>.\n"
+"\t\t\t\t\t\t</p>\n"
+"\t\t\t\t\t\t<p>\n"
+"\t\t\t\t\t\tДля громадян України заняття відбуваються щосуботи: для "
+"дошкільнят - у <a href=\"https://uk.ukrainskidom.pl/nashi-proekti/dityachij-"
+"klub-rukavichka/\">Дитячому клубі Рукавичка</a> в <a href=\"http://naszwybor."
+"org.pl\">Українському домі</a> у Варшаві, а для школярів - у Zespół Szkół "
+"Stenotypii i Języków Obcych w Warszawie. Дошкільний та шкільний відділи для "
+"меншини навчаються у <a href=\"http://sp221.edu.pl/nowa\">Szkola Podstawowa "
+"221</a>, ліцейний - у <a href=\"http://www.12lo.warszawa.pl\">XII Liceum "
+"Ogólnokształcący</a> Варшави.\n"
+"\t\t\t\t\t\t</p>\n"
+"\t\t\t\t\t\t<p>\n"
+"\t\t\t\t\t\tБлизьке розташування відділів дає можливість проводити "
+"загальношкільні заходи та урочистості разом  - великою українською "
+"варшавською родиною!\n"
+"\t\t\t\t\t\t</p>\n"
+"\t\t\t\t\t\t"
+msgstr ""
+"\n"
+"\t\t\t\t\t\t<p>Sobotnia Szkoła Ukraińska w Warszawie – to szkoła dla "
+"Ukraińców, gdzie można nauczyć się języka ukraińskiego, historii Ukrainy, "
+"jej kultury i geografii.</p>\n"
+"\t\t\t\t\t\t<p>\n"
+"\t\t\t\t\t\tMamy zaszczyt kontynuować prawie 90. letnią historię szkolnictwa "
+"ukraińskiego w stolicу Polski. 15 listopada 1929 roku rozpoczął się pierwszy "
+"rok szkolny w Dziecięcej Szkole Ukraińskiej stworzonej przez emigrantów "
+"ukraińskich – twórców Ukraińskiej Republiki Ludowej.\n"
+"\t\t\t\t\t\t</p>\n"
+"\t\t\t\t\t\t<p>\n"
+"\t\t\t\t\t\tDziś w ramach Sobotniej Szkoły Ukraińskiej w Warszawie "
+"współpracują Międzyszkolny Punkt Nauczania Mniejszości Ukraińskiej (dla "
+"obywateli Polski pochodzenia ukraińskiego), organem prowadzącym dla którego "
+"jest <a href=\"http://edukacja.warszawa.pl/\">Biuro Edukacji m. st. "
+"Warszawa</a> oraz Sobotnia Szkoła Ukraińska dla obywateli Ukrainy prowadzona "
+"przez <a href=\"http://naszwybir.pl/fond-nash-vibir/\">Fundację Nasz Wybór</"
+"a>.\n"
+"\t\t\t\t\t\t</p>\n"
+"\t\t\t\t\t\t<p>\n"
+"\t\t\t\t\t\tDla obywateli Ukrainy zajęcia odbywają  się w soboty: dla dzieci "
+"w wieku przedszkolnym - w <a href=\"https://uk.ukrainskidom.pl/nashi-proekti/"
+"dityachij-klub-rukavichka/\">Klubiku Dziecięcym Rukawyczka</a> przy <a href="
+"\"http://naszwybor.org.pl\">Domu Ukraińskim</a>, dla starszych uczniów - w "
+"budynku Zespołu Szkół Stenotypii i Języków Obcych w Warszawie. Dla obywateli "
+"polskich pochodzenia ukraińskiego ekcję grup przedszkolnych i szkolnych "
+"odbywają się w <a href=\"http://sp221.edu.pl/nowa\">Szkole Podstawowej nr "
+"221</a>, a grup licealnych - w <a href=\"http://www.12lo.warszawa.pl\">XII "
+"Liceum Ogólnokształcący</a>  w Warszawie.\n"
+"\t\t\t\t\t\t</p>\n"
+"\t\t\t\t\t\t<p>\n"
+"\t\t\t\t\t\tTe dwie części położone są blisko siebie, co umożliwia wspólną "
+"organizację wydarzeń i uroczystości oraz ich obсhodzenie razem – wielką "
+"ukraińską warszawską rodziną!\n"
+"\t\t\t\t\t\t</p>\n"
+"\t\t\t\t\t\t"
+
+#: information/templates/information/contact_form.html:14
+msgid "Напишіть нам!"
+msgstr "Napisz do nas!"
+
+#: information/templates/information/contact_form.html:46
+#: information/templates/information/contact_form.html:47
+msgid "Надіслати"
+msgstr "Odesłać"
+
+#: information/templates/information/login.html:14
+msgid "Увійти"
+msgstr ""
+
+#: information/templates/information/logout.html:14
+msgid "Вийти"
+msgstr ""
+
+#: information/views.py:28
+msgid "Повідомлення надіслано!"
+msgstr "Wiadomość została wysłana!"
+
+#: shkola/settings/base.py:119
+msgid "Ukrainian"
+msgstr ""
+
+#: shkola/settings/base.py:120
+msgid "Polish"
+msgstr ""
+
+#: theteachers/models.py:12
+msgid "Прізвище"
+msgstr ""
+
+#: theteachers/models.py:13
+msgid "Інформація"
+msgstr ""
+
+#: theteachers/models.py:14
+msgid "Ім'я польською"
+msgstr ""
+
+#: theteachers/models.py:16
+msgid "Прізвище польською"
+msgstr ""
+
+#: theteachers/models.py:18
+msgid "Інформація польською"
+msgstr ""
+
+#: theteachers/views.py:34
+msgid "Учителя додано!"
+msgstr ""
+
+#: theteachers/views.py:43
+msgid "Iнформацію про учителя оновлено!"
+msgstr ""
