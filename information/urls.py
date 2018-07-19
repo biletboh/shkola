@@ -11,6 +11,8 @@ app_name = 'information'
 urlpatterns = [
     path('about/', views.About.as_view(), name='about'),
     path('contacts/', views.Contacts.as_view(), name='contacts'),
+    path('contact-form/', views.ContactFormView.as_view(),
+         name='contact_form'),
     path('login/',
          auth_views.LoginView.as_view(template_name='information/login.html'),
          {'next': '/blog/update/list/'}, name='login'),
