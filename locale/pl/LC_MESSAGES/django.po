@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-19 21:58+0000\n"
+"POT-Creation-Date: 2018-07-20 09:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
 "%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: blog/forms.py:15 blog/models.py:21 theteachers/forms.py:13
+#: blog/forms.py:15 blog/models.py:21 theteachers/forms.py:14
 #: theteachers/models.py:21
 msgid "Світлина"
 msgstr ""
@@ -102,6 +102,8 @@ msgid "Вчителі"
 msgstr "Kadra pedagogiczna"
 
 #: core/templates/core/base.html:65
+#: information/templates/information/contacts.html:14
+#: information/templates/information/contacts.html:63
 msgid "Контакти"
 msgstr "Kontakty"
 
@@ -232,9 +234,43 @@ msgstr "Napisz do nas!"
 msgid "Надіслати"
 msgstr "Odesłać"
 
+#: information/templates/information/contacts.html:13
+msgid "Для громадян України"
+msgstr "Dla obywateli Ukrainy"
+
+#: information/templates/information/contacts.html:18
+msgid "Українська суботня школа"
+msgstr "Sobotnia Szkoła Ukraińska"
+
+#: information/templates/information/contacts.html:35
+msgid "Дошкільний відділ"
+msgstr "Oddział Przedszkolny"
+
+#: information/templates/information/contacts.html:35
+msgid "Дитячий клуб Рукавичка"
+msgstr "Dziecięcy Klub “Rukawyczka”"
+
+#: information/templates/information/contacts.html:48
+#: information/templates/information/contacts.html:78
+msgid "заняття відбуваються щосуботи"
+msgstr "zajęcia odbywają się w soboty"
+
+#: information/templates/information/contacts.html:62
+msgid "Для громадян Польщі"
+msgstr "Dla obywateli Polski"
+
+#: information/templates/information/contacts.html:67
+msgid "Дошкільний та шкільний відділи"
+msgstr "Przedszkolny i szkolny"
+
+#: information/templates/information/contacts.html:71
+msgid "Ліцейний відділ"
+msgstr "Oddział licealny"
+
 #: information/templates/information/login.html:14
+#: information/templates/information/login.html:22
 msgid "Увійти"
-msgstr ""
+msgstr "Zaloguj się"
 
 #: information/templates/information/logout.html:14
 msgid "Вийти"
