@@ -95,6 +95,11 @@ p {
     margin-bottom: 2rem;
   }
 }
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg-mobile.jpg");
+  }
+}
 #mainNav {
   background-color: rgba(41, 117, 149, 0.8);
   font-family: "MuseoSansCyrl";
@@ -351,6 +356,11 @@ p {
   border-color: #1e566d;
 }
 
+@media (max-width: 992px) {
+  .btn-languages {
+    margin-right: 10px;
+  }
+}
 .blog-img {
   display: block;
 }
